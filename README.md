@@ -42,13 +42,13 @@ Make sure to check off your items as you complete them. [ ] → [x]
 
 ### Variables inside the .onlick event
 
-6. [ ] Declare user input variables for each of your questions. If you have three questions, you should have three variables. These variables should equal the value of the user input for each question.
+6. [x] Declare user input variables for each of your questions. If you have three questions, you should have three variables. These variables should equal the value of the user input for each question.
     - If you don't want to stress on whether or not the user's capitalization is exact, consider using the .toLowerCase() method.
 </br>
 </br>
 
 ### Conditionals
-7. [ ] Create a conditional statement for the responses to Question 1 based on the user input.
+7. [x] Create a conditional statement for the responses to Question 1 based on the user input.
 </br>
 
 8. [ ] Create a conditional statement for the responses to Question 2 based on the user input.

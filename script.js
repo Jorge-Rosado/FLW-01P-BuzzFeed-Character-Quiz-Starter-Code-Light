@@ -12,7 +12,7 @@ function buzzfeedQuiz() {
 
 
   // task 5: declare variables for values we'll set later. You'll need one for an image source, a result and a score for each question.
-let imageSource
+let imageSource = document.querySelector(".imgresult")
 let result = document.querySelector(".displayResult")
 let scoreOne
 let scoreTwo
@@ -75,13 +75,19 @@ let sumOfScores = scoreOne + scoreTwo + scoreThree
     
 
     // task 11: create a conditional statement for the result to the quiz based on the total score. Using string interpolation, display these to the page: the result, an image that corresponds and a message to go with it.
-if(sumOfScores >= 10){
-  result.insertAdjacentHTML("afterend", )
+
+
+if(sumOfScores <= 5){ result.insertAdjacentHTML("afterend", "<h1> You seem like you're more like Walter! </h1>")
+imageSource.src="images/dad.webp"
+} else if (sumOfScores > 5 && sumOfScores <= 8) {
+result.insertAdjacentHTML("afterend", "<h1> You seem like you're more like Josh! </h1>")
+  imageSource.src="images/josh.webp"
+}  else if (sumOfScores > 8 && sumOfScores <= 10) {
+result.insertAdjacentHTML("afterend", "<h1> You seem like you're more like Megan! </h1>")
+  imageSource.src="images/megan.jpg"
+}  else if (sumOfScores > 10) {
+result.insertAdjacentHTML("afterend", "<h1> You seem like you're more like Drake! </h1>")
+  imageSource.src="images/drake.webp"
 }
-
-
-
-
-
-  };
-}
+  }
+};
